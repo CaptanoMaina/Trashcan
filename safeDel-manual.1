@@ -1,0 +1,43 @@
+
+.TH SAFEDEL 1 "OCTOBER 26, 2021" Linux "User Manuals"
+
+.SH NAME
+safeDel \-A bash script to enable users to safely delete files and restore them
+.SH SYNOPSIS
+.B safeDel.sh [[-d] [-l] | [-r] | [-e] [-t] [-m] [-k] 
+
+.SH DESCRIPTION
+.B safeDel
+A utility that enables the user  to carry out the following operations from the command line or the menu option: Move files to trash, restore file from trash,Check disk usage, Empty the trash and also a monitor that monitors the changes in the trashcan.
+
+.SH OPTIONS
+.IP -d
+Safely deletes files from the a directory to the trashcan
+.IP -l
+Displays the list of files in the Trashcan
+.IP -r
+Moves a specified file from the trashcan into the users current working directory
+.IP -e
+Loops over files in the Trashcan and deletes files once a user approves.
+.IP -t
+Checks the disk usage of the trashcan directory and displaays it to the user.
+.IP -m
+Starts the monitor script in a separate terminal to monitor changes in the trashcan
+.IP -k
+Kills the monitor
+
+
+.SH FILES
+.I /safeDel.sh
+.RS
+A safeDel script containing the implementation of the different options
+
+.SH AUTHOR
+Margaret Maina <mmaina200@caledonian.ac.uk>
+
+.I Further instructions:
+Ensure that the spelling of files is correct and the you have written the correct file path
+
+
+
+
